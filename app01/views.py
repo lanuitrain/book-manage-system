@@ -5,6 +5,9 @@ from app01 import models
 
 
 # =========Class Based View==================
+from app01.models import Admin
+
+
 class AddPublisher(View):
     def get(self, request):
         return render(request, 'add_publisher.html')
@@ -144,4 +147,33 @@ def edit_author(request, edit_id):
 
 
 def index(request):
+    # if(request.session['adminSession'] == None):
+    #     return render(request, 'login.html')
     return render(request, 'index.html')
+
+
+def login(request):
+    if request.method == "POST":
+        name = request.POST.get('user')
+        password = request.POST.get('password')
+        #email = request.POST.get('email')
+        admin = Admin.objects.filter(Aname=name,Apassword=password).first()
+        if admin != None:
+            # request.session['adminSession'] = admin
+            return redirect('/index/')
+        message = '请重新输入！'
+        return render(request, 'login.html', {'message': message})
+    return render(request, 'login.html')
+
+
+def add_admin(request):  # 增
+    if request.method == "POST":
+        name = request.POST.get('user')
+        password = request.POST.get('password')
+        email = request.POST.get('email')
+        admin = Admin(Aname=name, Apassword=password, Aemail=email)
+        admin.save()
+        return redirect('/login/')
+       # return render(request, 'login.html')
+    elif request.method == "GET":
+        return render(request, 'register.html')

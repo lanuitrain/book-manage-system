@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="icon" href="../static/images/rabbit_24px_1182406_easyicon.net.ico">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="../static/font/iconfont.css">
+</head>
+<body>
+<div class="overlay">
+    <form acrion="/login/" method="post">
+        {% csrf_token %}
+        <div class="con">
+            <header class="head-form">
+                <h2>Log In</h2><br>
+                <p>图书信息管理系统</p>
+            </header>
+            <br>
+            <div class="field-set">
+                <span class="input-item">
+           <i class="fa fa-user-circle iconfont">&#xe62c;</i>
+         </span>
+                <input class="form-input" id="txt-input" type="text" name="user" placeholder="账 号" required="">
+
+                <br>
+                <span class="input-item">
+        <i class="fa fa-key iconfont">&#xe6de;</i>
+       </span>
+                <input class="form-input" type="password" placeholder="密 码" id="pwd" name="password" required="">
+
+                <span>
+        <i class="fa fa-eye iconfont" aria-hidden="true" type="button" id="eye">&#xe60c;</i>
+     </span>
+                <br>
+                <button class="log-in"> 登 录</button>
+            </div>
+            <div class="other">
+                <button class="btn submits frgt-pass"  type="button" >Forger Password</button>
+                <button class="btn submits sign-up" type="button" onclick="window.location.href='/register'">注 册
+                    <i class="fa fa-user-plus iconfont" aria-hidden="true">&#xe667;</i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<script>
+    function show() {
+        var p = document.getElementById('pwd');
+        p.setAttribute('type', 'text');
+    }
+
+    function hide() {
+        var p = document.getElementById('pwd');
+        p.setAttribute('type', 'password');
+    }
+
+    var pwShown = 0;
+    document.getElementById("eye").addEventListener("click", function () {
+        if (pwShown == 0) {
+            pwShown = 1;
+            show();
+        } else {
+            pwShown = 0;
+            hide();
+        }
+    }, false);
+</script>
+</html>

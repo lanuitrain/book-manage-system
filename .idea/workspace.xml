@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca5474e6-d77e-40f4-966d-8a37f073a97b" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ca5474e6-d77e-40f4-966d-8a37f073a97b" name="变更" comment="Python+Django+Mysql实现的图书管理系统">
+      <change afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/demo_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/iconfont.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/rabbit_24px_1182406_easyicon.net.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book_system/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/book_system/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,29 +31,57 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2S6FSTnoHQT0OWPiJKYRR2kRPBb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Practice\Python\schoolPractice\book-system\templates" />
+      <recent name="F:\Practice\Python\schoolPractice\book-system\static" />
+      <recent name="F:\Practice\Python\schoolPractice\book-system\static\images" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="book-system" type="Python.DjangoServer" factoryName="Django server">
@@ -78,8 +119,20 @@
       <updated>1688459125586</updated>
       <workItem from="1688459130206" duration="40000" />
       <workItem from="1688459174222" duration="1866000" />
-      <workItem from="1688461105250" duration="2061000" />
+      <workItem from="1688461105250" duration="2219000" />
+      <workItem from="1688518209025" duration="9937000" />
+      <workItem from="1688555636061" duration="1653000" />
+      <workItem from="1688562209997" duration="6910000" />
+      <workItem from="1688570492472" duration="704000" />
     </task>
+    <task id="LOCAL-00001" summary="Python+Django+Mysql实现的图书管理系统">
+      <created>1688463206846</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688463206846</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,5 +148,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Python+Django+Mysql实现的图书管理系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="Python+Django+Mysql实现的图书管理系统" />
   </component>
 </project>

@@ -4,8 +4,8 @@ from app01 import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.index, name='index'),
-
+    url(r'^$', views.login, name='login'),
+    url(r'^index/$', views.index, name='index'),
     # 出版社相关的对应关系
     url(r'^publisher_list/$', views.publisher_list, name='publisher_list'),
     url(r'^add_publisher/$', views.AddPublisher.as_view(), name='add_publisher'),
@@ -24,4 +24,8 @@ urlpatterns = [
     url(r'^add_author/$', views.add_author, name='add_author'),
     url(r'^delete_author/([0-9]+)/$', views.delete_author, name='delete_author'),
     url(r'^edit_author/([0-9]+)/$', views.edit_author, name='edit_author'),
+
+    # 管理员
+    url(r'^register$', views.add_admin, name='add_admin'),
+    url(r'^login/$', views.login, name='login')
 ]

@@ -34,3 +34,10 @@ class Author(models.Model):
     def __str__(self):
         return self.name
 
+
+class Admin(models.Model):
+    Aid = models.AutoField(verbose_name='管理员id', primary_key=True)
+    Aname = models.CharField(verbose_name='管理员账号', max_length=20)
+    Apassword = models.CharField(verbose_name='管理员密码', max_length=40)
+    Aemail = models.CharField(verbose_name='管理员邮箱', max_length=20)
+
